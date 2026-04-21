@@ -15,7 +15,7 @@ public class Main {
 
             while ((line = bufferedReader.readLine()) != null) {
 
-                String splitter = "[\n|]";
+                String splitter = "\\|";
 
                 String[] myArray = line.split(splitter);
 
