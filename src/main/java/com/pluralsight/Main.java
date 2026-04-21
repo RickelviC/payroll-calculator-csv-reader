@@ -26,14 +26,17 @@ public class Main {
 
                 Employee employee = new Employee(id,name,hours,pay);
 
-                System.out.printf(employee.getEmployeeId()+ ": " + employee.getName() + " Made $" + employee.getGrossPay()+"\n");
+                System.out.printf("Employee ID: %d, Name: %s, Gross pay: $%.2f%n",
+                        employee.getEmployeeId(),employee.getName(),employee.getGrossPay());
+
+                //System.out.printf(employee.getEmployeeId()+ ": " + employee.getName() + " Made $" + employee.getGrossPay()+"\n");
 
             }
 
             bufferedReader.close();
 
         } catch (Exception ex) {
-            System.out.println("Something went wrong!");
+            System.err.println("Something went wrong reading the files!");
         }
     }
 }
